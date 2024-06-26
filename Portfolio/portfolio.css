@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.portfolio {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100;
+    z-index: 1;
+}
+
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+
+.left-side,
+.right-side {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-side {
+    background: #0fa3b1;
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.right-side {
+    background: linear-gradient(-45deg, #f7a072, #0fa3b1 70%);
+    width: 30%;
+}
+
+.icons .fa-brands {
+    color: #262525;
+    font-size: 1.4rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content {
+    margin-left: 4rem;
+}
+
+.content .intro {
+    font-size: 1.5 rem;
+    color: #fff;
+}
+
+.content .intro span {
+    color: #f7a072;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: #f7a072;
+}
+
+.content .detail {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn-container button {
+    border: .1rem solid #f7a072;
+    font-size: 1.1rem;
+    padding: .6rem 1.4rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+button:nth-child(1) {
+    background: #f7a072;
+    color: #fff;
+}
+
+button:nth-child(2) {
+    background: transparent;
+    color: #f7a072;
+    margin-left: 2rem;
+}
+
+button:nth-child(1):hover {
+    background: transparent;
+    color: #f7a072;
+}
+
+button:nth-child(2):hover {
+    background: #f7a072;
+    color: #262525;
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(#262525, #f7a072);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, #0fa3b1 50%);
+    width: 38rem;
+}
+
+.circle:nth-child(2) {
+    width: 30rem;
+    background-image: url("RK.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .1rem solid white;
+    box-shadow: 0 0 1.2rem #ffa4a4, inset 0 0 1rem #fff;
+}
+
+.navlist li a::after,
+.navlist .active::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+
+.navlist li a:hover::after,
+.navlist .active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.navlist-container {
+    background: #0fa3b1;
+    color: #fff;
+}
+
+/* -----About------ */
+
+#about {
+    float: left;
+    clear: both;
+    margin-left: 2vh;
+    color: #fff;
+    width: fit-content;
+}
+
+
+.section h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+
+}
+
+
+.section p {
+    /* background-color: #f7a072;
+    box-shadow: 0 6px 10px black; */
+    font-size: 13px;
+    line-height: 1.9;
+    font-weight: 200;
+
+}
+
+
+
+.section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    clear: both;
+
+}
+
+.skills-section {
+    max-width: 800px;
+    margin: 0;
+    padding: 20px;
+    clear: both;
+    width: 65%;
+}
+
+.skill {
+    margin-bottom: 10px;
+    padding-left: 0%;
+    padding-right: 20%;
+}
+
+.skill h4 {
+    margin-bottom: 10px;
+    font-size: .9rem;
+    font-weight: 200;
+}
+
+.skill-bar {
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    background: #f7a072;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.5em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+.about-skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+/* -------------- Project Container---------------- */
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.project-title {
+    margin-left: 30px;
+}
+
+/* Project Box */
+.project-box {
+    position: relative;
+
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #262525;
+    background-color: #fff;
+    box-shadow: 0 6px 10px black;
+    border-radius: 5px;
+    z-index: 1;
+
+}
+
+.project-box:hover {
+    transform: scale(1.1);
+}
+
+
+.project-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: #f7a072;
+    color: #262525;
+    opacity: 0;
+    transition: opacity 0.3s;
+    overflow: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.project-box:hover .project-details {
+    opacity: 1;
+}
+
+
+.project-container {
+    margin-top: 60px;
+}
+
+.project-box {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-box h3 {
+    padding-top: 50px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #f7a072;
+    text-align: center;
+    text-shadow: 0 1.5px 3px black;
+}
+
+
+/*------------------- Contact Section ------------------- */
+
+.contact-section h2 {
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin-left: 150px;
+    /* background-color: red; */
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: lighter;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #262525;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #f7a072;
+}
+
+
+
+/* ----------------Resume Download Button ---------*/
+.resume-download {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 0;
+    background-color: transparent;
+    max-width: fit-content;
+    border: .1rem solid rgb(255, 168, 168);
+}
+
+.resume-download a {
+    text-decoration: none;
+}
+
+.resume-download button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.resume-download button:hover {
+    background-color: #f7a072;
+    color: #262525;
+}
+
+/* ------------------footer ----------------*/
+
+.footer {
+    background-color: #0fa3b1;
+    color: #262525;
+    padding: 10px 0;
+    border-top: 6px solid red;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex-basis: 30%;
+}
+
+.footer-section h3 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #262525;
+    font-size: 18px;
+}
+
+.social-links a .fab:hover {
+    cursor: pointer;
+    background: linear-gradient(#262525, #f7a072);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-weight: 300;
+
+}

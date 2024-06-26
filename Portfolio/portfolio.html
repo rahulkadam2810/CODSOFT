@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="portfolio">
+        <ul class="navlist">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <div class="left-side">
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100025128311519"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/rahul-kadam-667979224/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/rahul.kadam_rk/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/RahulKa3524"><i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+            <div class="content">
+                <p class="intro">Hi! I am <span> Rahul Kadam</span>
+                <p>
+                <h1>Web Developer.</h1>
+                <p class="detail"></p>
+                <div class="btn-container">
+                    <a href="#Contact"><button>Hire Me</button></a>
+                    <a href="#project"><button>View Project</button></a>
+
+                </div>
+                <div class="resume-download">
+                    <a href="Rahul_Kadam..docx" download>
+                        <button>Download Resume</button>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="right-side"></div>
+
+        <div class="design">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <div class="navlist-container">
+        <div class="about-skills-container">
+            <section id="about" class="section">
+                <h2>About</h2>
+                <p>Self- motivated and Hardworking fresher seeking for an opportunity <br>to work in challenging
+                    environment
+                    to prove my skills and utilize my <br>knowledge and intelligence in the growth of the organization.
+                </p>
+            </section>
+
+
+
+            <section id="skills" class="section skills-section">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <h4>Backend (Core Java, Oops Concepts, Advance Java, Spring Boot)</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;">Backend - 80%</div>
+                    </div>
+
+                </div>
+                <div class="skill">
+                    <h4>Frontend (HTML5, CSS3, JavaScript)</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;">Frontend - 85%</div>
+                    </div>
+
+                </div>
+                <div class="skill">
+                    <h4>Database (SQL and MongoDB)</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;">Database - 75%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4>Other Technologies( React Js and Apache)</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%;">Other Technologies - 65%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4>Version Control (Git and GitHub)</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;">Version Control - 80%</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="project" class=" project-section">
+            <h2 class="project-title">Projects</h2>
+            <div class="project-container">
+                <div class="project-box">
+                    <h3>Employee Management System</h3>
+                    <div class="project-details">
+                        <p>
+                            <strong>• Created a desktop-based application using Java concepts such as Swing and
+                                AWT.</strong><br>
+                            <strong>• Worked on JDBC connectivity with the database.</strong><br>
+                            <strong>• Used MySQL for the database.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <h3>Chat Application</h3>
+                    <div class="project-details">
+                        <p>
+                            <strong>• Developed a chat application using Java (OOP concepts).</strong><br>
+                            <strong>• Utilized networking (socket programming) with client-server
+                                architecture.</strong><br>
+                            <strong>• Created GUI using Swing.</strong><br>
+                            <strong>• Implemented multithreading for handling multiple tasks.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <h3>E-commerce Website</h3>
+                    <div class="project-details">
+                        <p>
+                            <strong>• Developed front-end using React for an interactive, responsive, and intuitive
+                                website.</strong><br>
+                            <strong>• Developed back-end using Spring Boot with Spring Security and JWT tokens for
+                                authentication.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact" class="contact-section">
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="number">Mobile Number:</label>
+                    <input type="number" id="number" name="number" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+
+
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Me</h3>
+                    <ul>
+                        <li>Email: rahul.kadam281099@gmail.com</li>
+                        <li>Phone: 7757823017</li>
+                        <li>Address: Pune|Maharashtra</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Me On Below Platform</h3>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/profile.php?id=100025128311519"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://x.com/RahulKa3524"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/rahul.kadam_rk/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/rahul-kadam-667979224/"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rahul Kadam. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
